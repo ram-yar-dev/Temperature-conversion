@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature conversion</title>
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: hsl(0, 0%, 80%);
+        }
+        form{
+            background-color: hsl(0, 0%, 100%);
+            text-align: center;
+            max-width: 350px;
+            text-align: center;
+            margin: auto;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px hsl(0, 0%, 40%);
+        }
+        #textbox{
+            font-size: 1.5em;
+            max-width: 5em;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        label{
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+        button{
+            font-size: 1.5em;
+            margin-top: 20px;
+            padding: 5px;
+           background-color:hsl(0, 100%, 50%);
+           border-radius: 5px;
+           color: white;
+           cursor: pointer;
+        }
+        button:hover{
+            background-color: hsl(0, 100%, 40%);
+        }
+
+        #result{
+            font-weight: bold;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Temperature conversion</h1>
+        <input type="number" id="textbox"  ><br>
+        <input type="radio" id="tofahrenheit" name="r">
+        <label for="tofahrenheit">Celsius → Fahrenheit </label><br>
+        <input type="radio" id="tocelsius" name="r">
+        <label for="tocelsius">Fahrenheit → Celsius</label><br>
+        <button type="button" onclick="ramyar()" id="submit">Submit</button>
+        <p id="result"></p>
+    </form>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
